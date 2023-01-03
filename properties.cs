@@ -1,19 +1,14 @@
-class Person
-{
-    private string name;
-    public string Name
-    {
-        get { return name; }
-        set { name = value; }
-    }
-}
+using System;
 
-class Program
+namespace MyApplication
 {
-    static void Main(string[] args)
+    class Person
     {
-        Person myObj = new Person();
-        myObj.Name = "Liam";
-        Console.WriteLine(myObj.Name);
+        private string name;  // field
+        public string Name    // property
+        {
+            get { return name; }
+            set { name = value; }
+        }
     }
 }
