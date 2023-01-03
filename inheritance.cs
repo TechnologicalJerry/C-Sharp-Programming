@@ -1,24 +1,20 @@
-class Vehicle
+
+using System;
+
+namespace MyApplication
 {
-    public string brand = "Ford";
-    public void honk()
+    class Program
     {
-        Console.WriteLine("Tuut, tuut!");
-    }
-}
-class Car : Vehicle
-{
-    public string modelName = "Mustang";
-}
+        static void Main(string[] args)
+        {
+            // Create a myCar object
+            Car myCar = new Car();
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        Car myCar = new Car();
+            // Call the honk() method (From the Vehicle class) on the myCar object
+            myCar.honk();
 
-        myCar.honk();
-
-        Console.WriteLine(myCar.brand + " " + myCar.modelName);
+            // Display the value of the brand field (from the Vehicle class) and the value of the modelName from the Car class
+            Console.WriteLine(myCar.brand + " " + myCar.modelName);
+        }
     }
 }
