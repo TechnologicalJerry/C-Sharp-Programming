@@ -1,42 +1,23 @@
-using System;
-
-namespace MyApplication
+class Animal
 {
-    class Animal
+    public void animalSound()
     {
-        public void animalSound()
-        {
-            Console.WriteLine("The animal makes a sound");
-        }
+        Console.WriteLine("The animal makes a sound");
     }
+}
 
-    class Pig : Animal
+class Pig : Animal
+{
+    public void animalSound()
     {
-        public void animalSound()
-        {
-            Console.WriteLine("The pig says: wee wee");
-        }
+        Console.WriteLine("The pig says: wee wee");
     }
+}
 
-    class Dog : Animal
+class Dog : Animal
+{
+    public void animalSound()
     {
-        public void animalSound()
-        {
-            Console.WriteLine("The dog says: bow wow");
-        }
-    }
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Animal myAnimal = new Animal();
-            Animal myPig = new Pig();
-            Animal myDog = new Dog();
-
-            myAnimal.animalSound();
-            myPig.animalSound();
-            myDog.animalSound();
-        }
+        Console.WriteLine("The dog says: bow wow");
     }
 }
