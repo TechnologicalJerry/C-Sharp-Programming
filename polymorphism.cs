@@ -2,7 +2,7 @@ using System;
 
 namespace MyApplication
 {
-    class Animal  // Base class (parent) 
+    class Animal
     {
         public void animalSound()
         {
@@ -10,7 +10,7 @@ namespace MyApplication
         }
     }
 
-    class Pig : Animal  // Derived class (child) 
+    class Pig : Animal
     {
         public void animalSound()
         {
@@ -18,7 +18,7 @@ namespace MyApplication
         }
     }
 
-    class Dog : Animal  // Derived class (child) 
+    class Dog : Animal
     {
         public void animalSound()
         {
@@ -30,9 +30,9 @@ namespace MyApplication
     {
         static void Main(string[] args)
         {
-            Animal myAnimal = new Animal();  // Create a Animal object
-            Animal myPig = new Pig();  // Create a Pig object
-            Animal myDog = new Dog();  // Create a Dog object
+            Animal myAnimal = new Animal();
+            Animal myPig = new Pig();
+            Animal myDog = new Dog();
 
             myAnimal.animalSound();
             myPig.animalSound();
