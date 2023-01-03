@@ -1,37 +1,42 @@
-class Animal
+using System;
+
+namespace MyApplication
 {
-    public void animalSound()
+    class Animal  // Base class (parent) 
     {
-        Console.WriteLine("The animal makes a sound");
+        public void animalSound()
+        {
+            Console.WriteLine("The animal makes a sound");
+        }
     }
-}
 
-class Pig : Animal
-{
-    public void animalSound()
+    class Pig : Animal  // Derived class (child) 
     {
-        Console.WriteLine("The pig says: wee wee");
+        public void animalSound()
+        {
+            Console.WriteLine("The pig says: wee wee");
+        }
     }
-}
 
-class Dog : Animal
-{
-    public void animalSound()
+    class Dog : Animal  // Derived class (child) 
     {
-        Console.WriteLine("The dog says: bow wow");
+        public void animalSound()
+        {
+            Console.WriteLine("The dog says: bow wow");
+        }
     }
-}
 
-class Program
-{
-    static void Main(string[] args)
+    class Program
     {
-        Animal myAnimal = new Animal();
-        Animal myPig = new Pig();
-        Animal myDog = new Dog();
+        static void Main(string[] args)
+        {
+            Animal myAnimal = new Animal();  // Create a Animal object
+            Animal myPig = new Pig();  // Create a Pig object
+            Animal myDog = new Dog();  // Create a Dog object
 
-        myAnimal.animalSound();
-        myPig.animalSound();
-        myDog.animalSound();
+            myAnimal.animalSound();
+            myPig.animalSound();
+            myDog.animalSound();
+        }
     }
 }
