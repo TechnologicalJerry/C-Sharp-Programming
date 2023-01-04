@@ -2,18 +2,14 @@ using System;
 
 namespace MyApplication
 {
-    // Interface
     interface IAnimal
     {
-        void animalSound(); // interface method (does not have a body)
+        void animalSound();
     }
-
-    // Pig "implements" the IAnimal interface
     class Pig : IAnimal
     {
         public void animalSound()
         {
-            // The body of animalSound() is provided here
             Console.WriteLine("The pig says: wee wee");
         }
     }
@@ -22,7 +18,7 @@ namespace MyApplication
     {
         static void Main(string[] args)
         {
-            Pig myPig = new Pig();  // Create a Pig object
+            Pig myPig = new Pig();
             myPig.animalSound();
         }
     }
