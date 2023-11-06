@@ -10,7 +10,6 @@ namespace MyApplication
     {
         void myOtherMethod();
     }
-
     class DemoClass : IFirstInterface, ISecondInterface
     {
         public void myMethod()
