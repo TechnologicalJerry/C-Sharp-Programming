@@ -10,7 +10,6 @@ namespace MyApplication
             Console.WriteLine("Zzz");
         }
     }
-
     class Pig : Animal
     {
         public override void animalSound()
