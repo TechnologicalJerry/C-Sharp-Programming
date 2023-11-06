@@ -12,7 +12,6 @@ class Pig : Animal
         Console.WriteLine("The pig says: wee wee");
     }
 }
-
 class Dog : Animal
 {
     public void animalSound()
