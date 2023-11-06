@@ -12,8 +12,6 @@ namespace MyApplication
     }
 }
 
-
-
 namespace MyApplication
 {
     class Car
