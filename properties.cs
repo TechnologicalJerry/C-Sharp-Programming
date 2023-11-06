@@ -1,6 +1,7 @@
 using System;
 
-namespace MyApplication{
+namespace MyApplication
+{
     class Person
     {
         private string name;  // field
