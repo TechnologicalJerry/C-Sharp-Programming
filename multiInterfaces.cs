@@ -6,7 +6,6 @@ namespace MyApplication
     {
         void myMethod();
     }
-
     interface ISecondInterface
     {
         void myOtherMethod();
