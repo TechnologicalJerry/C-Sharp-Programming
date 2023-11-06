@@ -6,7 +6,6 @@ namespace MyApplication
     class Car
     {
         public string model;
-
         public Car()
         {
             model = "Mustang";
