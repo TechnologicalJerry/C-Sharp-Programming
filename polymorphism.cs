@@ -5,7 +5,6 @@ class Animal
         Console.WriteLine("The animal makes a sound");
     }
 }
-
 class Pig : Animal
 {
     public void animalSound()
