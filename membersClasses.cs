@@ -6,7 +6,6 @@ namespace MyApplication
     {
         string color = "red";
         int maxSpeed = 200;
-
         static void Main(string[] args)
         {
             Car myObj = new Car();
