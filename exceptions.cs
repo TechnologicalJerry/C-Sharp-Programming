@@ -15,7 +15,6 @@ namespace MyApplication
                 Console.WriteLine("Access granted - You are old enough!");
             }
         }
-
         static void Main(string[] args)
         {
             checkAge(20);
