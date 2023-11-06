@@ -5,7 +5,6 @@ namespace MyApplication
     class Car
     {
         string color = "red";
-
         static void Main(string[] args)
         {
             Car myObj1 = new Car();
