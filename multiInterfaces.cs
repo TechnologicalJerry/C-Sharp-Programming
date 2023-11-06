@@ -21,7 +21,6 @@ namespace MyApplication
             Console.WriteLine("Some other text...");
         }
     }
-
     class Program
     {
         static void Main(string[] args)
